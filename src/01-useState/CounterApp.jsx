@@ -8,20 +8,20 @@ export const CounterApp = () => {
         counter3: 30,
     })
 
-    const {counter1, counter2, counter3} = state
-  return (
-    <>
-        <h1>Counter: {counter1} </h1>
-        <h1>Counter: {counter2} </h1>
-        <h1>Counter: {counter3} </h1>
+    const { counter1, counter2, counter3 } = state
+    return (
+        <>
+            <h1>Counter: {counter1} </h1>
+            <h1>Counter: {counter2} </h1>
+            <h1>Counter: {counter3} </h1>
 
-        <hr />
+            <hr />
 
-        <button className="btn" onClick={() => setCounter({
-            ...state,
-            counter1: counter1 + 1,
-        })}>+1</button>
-    </>
-)
+            <button className="btn" onClick={() => setCounter({
+                ...state,
+                counter1: counter1 + 1,
+            })}>+1</button>
+        </>
+    )
 }
 
